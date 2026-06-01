@@ -36,10 +36,10 @@ public class Cliente {
                 Resposta resposta = (Resposta) input.readObject();
 
                 System.out.println("=== Resultado ===");
-                System.out.println(resposta.getMensagem());
+                System.out.println(resposta.mensagem());
                 System.out.println("=================\n");
 
-                if (resposta.getMensagem().toLowerCase().startsWith("cofre aberto")) {
+                if (resposta.mensagem().toLowerCase().startsWith("cofre aberto")) {
                     jogarNovamente = false;
                 } else {
                     System.out.print("Deseja tentar novamente? (S/N): ");
